@@ -1,0 +1,72 @@
+*{
+    padding : 0;
+    margin:0;
+}
+
+       
+
+        body
+        {
+            background-image:url(game.jpg);
+            background-size: cover;
+            background-position: center;
+            box-sizing: border-box;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+      
+    .menu{
+        background: orange;
+        text-align: center;
+    }
+    .menu ul
+    {
+      
+        display: inline-flex;
+        list-style: none;
+        color: white;
+    }
+    .menu ul li
+    {
+        width: 120px;
+        margin:18px ;
+       padding:15px;
+
+    }
+
+    .menu ul li a{
+        color: white;
+        text-decoration:none;
+    }
+    
+    .active, .menu ul li:hover
+    {
+        background: orangered;
+        border-radius:50px;
+    }
+
+    .subMenu
+    {
+        display: none;
+    }
+    .menu ul li:hover .subMenu
+    {
+        display: block;
+        position: absolute;
+        background: orange;
+        margin-top: 15px;
+        margin-right: 10px;
+        margin-left: -15px;
+    }
+    .menu ul li:hover .subMenu ul
+    {
+        display:block;
+        margin: 5px;
+    }
+    .menu ul li:hover .subMenu ul li{
+
+        width: 150px;
+        padding: 10px;
+        text-align: left;
+        border-radius:6;
+        
+    }
